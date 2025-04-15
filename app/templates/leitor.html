@@ -48,29 +48,21 @@
     </nav>
 
     <div class="container mt-5">
-        <h2 class="mb-4">Tabela de Livros</h2>
+        <h2 class="mb-4">Tabela de leitores</h2>
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">Nome</th>
-                    <th scope="col">Autor</th>
-                    <th scope="col">Editora</th>
-                    <th scope="col">Gênero</th>
-                    <th scope="col">Preço</th>
-                    <th scope="col">Data Publicação</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">CPF</th>
                 </tr>
             </thead>
             <tbody>
-                {% for livro in livros %}
+                {% for leitor in leitores %}
                     <tr>
-                        <td>{{ livro.nome }}</td>
-                        <td>{{ livro.autor }}</td>
-                        <td>{{ livro.editora }}</td>
-                        <td>{{ livro.genero }}</td>
-                        <td>{{ livro.preco }}</td>
-                        <td>{{ livro.data_publicacao }}</td>
-                        <td>{{ livro.status }}</td>
+                        <td>{{ leitor.nome }}</td>
+                        <td>{{ leitor.email }}</td>
+                        <td>{{ leitor.cpf }}</td>
                     </tr>
                 {% endfor %}
             </tbody>

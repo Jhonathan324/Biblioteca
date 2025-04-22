@@ -57,6 +57,7 @@ class Genero(models.Model):
         verbose_name = "Gênero"
         verbose_name_plural = "Gêneros"
 
+
 class Livro(models.Model):
     nome = models.CharField(max_length=100, verbose_name="Nome dolivro")
     autor = models.ForeignKey(Autor, on_delete=models.CASCADE,verbose_name="Autor do livro")
